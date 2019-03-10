@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+    font-weight: bold;
+}
+
+.navBar {
+    background-color: #9fbff4;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    text-align: center;
+}
+
+.navLink a {
+    text-decoration: none;
+    margin: 5px;
+    padding-top: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.navLink a {
+    text-decoration: none;
+    margin: 5px;
+    padding-top: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+}
+
+.navLink a.activeClass {
+    color: gold;
+}

@@ -1,0 +1,14 @@
+Form {
+    margin: 2% 35% 3% 35%;
+}
+Input {
+    margin: 2px !important;
+}
+
+Button {
+    width: 101% !important;
+}
+Table {
+    margin: 0 10% 0 10%;
+    width: 80% !important;
+}
