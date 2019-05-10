@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class DropDown extends Component {
+class Deliver extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,15 +16,15 @@ class DropDown extends Component {
 
     render() {
         console.log('isOpened', this.state.isOpened);
-        let dropDownText;
+        let deliverText;
         if (this.state.isOpened) {
-            dropDownText = <div> Here is my DropDown </div>;
+            deliverText = <div> Here is my Deliver </div>;
         };
         return ( 
             <div onClick = {this.toggleState.bind(this)}>
-                Its dropDown baby {dropDownText}
+                Its deliver baby {deliverText}
             </div>
         );
     }
 }
-export default DropDown;
+export default Deliver;

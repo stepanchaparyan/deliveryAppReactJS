@@ -8,31 +8,49 @@ hr {
 }
 
 .navBar {
-    background-color: #9fbff4;
+    background-color: #46a88e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar div {
+    border: 1px solid rgb(13, 139, 133);
     padding: 15px;
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-.navLink a {
-    text-decoration: none;
-    margin: 5px;
-    padding-top: 5px;
-    font-weight: bold;
+.navBar div a {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: 0.3s;
+}
+.navBar div a.activeClass {
+    color: #192621;
+}
+.navBar div a:hover {
+    opacity: 0.3
 }
 
-.navLink a {
-    text-decoration: none;
-    margin: 5px;
-    padding-top: 5px;
-    font-weight: bold;
-    color: white;
-    font-size: 24px;
+.navDeliver {
+    flex: 1;
 }
 
-.navLink a.activeClass {
-    color: gold;
+.navHeader {
+    flex: 1;
 }
+
+.navAddShop {
+    flex: 1;
+}
+
+
+
+
