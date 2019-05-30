@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/AddShop.css';
 import { Table } from 'reactstrap';
+import PropTypes from 'prop-types';
 
 
 class MyTable extends Component {
@@ -8,6 +9,9 @@ class MyTable extends Component {
         super(props)
         //console.log(this.props);
     }    
+    static propTypes = {
+        shops:PropTypes.array
+    }
 
 	render() {
 		return (

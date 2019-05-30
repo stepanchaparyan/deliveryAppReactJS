@@ -7,7 +7,6 @@ import MyTable from './MyTable';
 class AddShop extends Component {
     constructor(props) {
         super(props);
-        //console.log('111 ', props.shops[0]);
         this.state = {
             name: '',
             city: '',
@@ -18,9 +17,8 @@ class AddShop extends Component {
         this.handleChangeCity = this.handleChangeCity.bind(this);
         this.handleChangeAddress = this.handleChangeAddress.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.state.shops.push(this.props.shops[0]);
-        this.state.shops.push(this.props.shops[1]);
-        this.state.shops.push(this.props.shops[2]);
+        this.state.shops.push(...this.props.shops);
+        console.log(this.state.shops);
     }
 
     handleChangeName(event) {
@@ -33,6 +31,14 @@ class AddShop extends Component {
         this.setState({address: event.target.value});
     }
 
+    emptyInputs() {
+        this.setState({
+            name: '',
+            city: '',
+            address: '',
+        });
+    }
+
     handleSubmit(event) {
         event.preventDefault();
         let newshop = {
@@ -42,6 +48,7 @@ class AddShop extends Component {
         };
         this.state.shops.push(newshop);
         this.setState({shops : this.state.shops});
+        this.emptyInputs();
         console.log(this.state.shops);
     }
 
