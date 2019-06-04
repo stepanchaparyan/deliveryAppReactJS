@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
-import '../css/AddShop.css';
 import { Table } from 'reactstrap';
-import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
-
-class MyTable extends Component {
-    static propTypes = {
-        shops:PropTypes.array
-    }
-
-	render() {
+class ShopList extends Component {
+    render() {
 		return (
             <Table striped>
                 <thead>
@@ -35,9 +29,15 @@ class MyTable extends Component {
                     )
                 }
                 </tbody>
-            </Table>
+            </Table> 
 		);
 	}
 }
 
-export default MyTable;
+const mapStateToProps = (state) => {
+    return {
+        shops: state.shopsList.shops
+    }
+}
+
+export default connect(mapStateToProps)(ShopList);

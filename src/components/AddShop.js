@@ -3,7 +3,6 @@ import '../css/AddShop.css';
 import { Form, Input, Button } from 'reactstrap';
 import MyTable from './MyTable';
 
-
 class AddShop extends Component {
     constructor(props) {
         super(props);
@@ -18,7 +17,7 @@ class AddShop extends Component {
         this.handleChangeAddress = this.handleChangeAddress.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.state.shops.push(...this.props.shops);
-        console.log(this.state.shops);
+        //console.log(this.state.shops);
     }
 
     handleChangeName(event) {

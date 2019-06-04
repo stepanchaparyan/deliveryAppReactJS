@@ -15,6 +15,9 @@ class Navbar extends Component {
                 <div className='navAddShop'>
                     <NavLink to="/AddShop" activeClassName='activeClass'>AddShop</NavLink>
                 </div>
+				<div className='navAddShop2'>
+                    <NavLink to="/AddShop2" activeClassName='activeClass'>AddShop2</NavLink>
+                </div>
 			</nav>	
 		);
 	}

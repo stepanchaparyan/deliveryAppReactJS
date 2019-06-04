@@ -1,14 +1,24 @@
 Form {
     margin: 2% 35% 3% 35%;
 }
-Input {
+.input {
     margin: 2px !important;
 }
 
-Button {
-    width: 101% !important;
+.addButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+#addButton {
+    width: 78%;
 }
 Table {
     margin: 0 10% 0 10%;
     width: 80% !important;
+}
+.inputs {
+    display: flex;
+    justify-content: space-around;
+    margin: 3% 10% 1% 10%;
 }

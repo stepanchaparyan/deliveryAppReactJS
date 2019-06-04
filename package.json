@@ -4,16 +4,23 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "firebase": "^6.1.0",
     "history": "^4.7.2",
+    "jquery": "^3.4.1",
     "jshint": "^2.10.1",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
+    "react-debounce-input": "^3.2.0",
     "react-dom": "^16.8.3",
+    "react-redux": "^7.0.3",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.5",
-    "reactstrap": "^7.1.0"
+    "react-scripts": "^3.0.1",
+    "reactstrap": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

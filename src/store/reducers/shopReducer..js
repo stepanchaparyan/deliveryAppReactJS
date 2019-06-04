@@ -1,20 +1,5 @@
-let state = {
-    menu:[
-        {
-            link: '/articles',
-            label: 'Articles'
-        },
-        {
-            link: '/contacts',
-            label: 'Contacts'
-        },
-        {
-            link: '/posts',
-            label: 'Posts'
-        }
-    ],
-
-    shops: [
+const initialState = {
+    shops:[
         {
             name: 'Nairi',
             city: 'Vanadzor',
@@ -30,7 +15,21 @@ let state = {
             city: 'Tashir',
             address: 'Tumanyan 38'
         }
-    ],
+    ]
 };
 
-export default state;
+const reducer = (state = initialState, action) => {
+    switch (action.type) {
+        case 'ADD_SHOP':
+            return {
+                ...state,
+                shops: [...state.shops, action.value]
+            }
+        default:
+            return state
+    }
+};
+
+export default reducer;
+
+ 
